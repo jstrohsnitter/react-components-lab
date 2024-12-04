@@ -46,7 +46,9 @@ const App = () => {
   
   <>
   <h1>Local Weather</h1>
-  <Forecast day="Monday" conditions="sunny" time="morning"/>
+  {weatherForecasts.map((forecasts) => (
+  <Forecast id="forecasts" key={forecasts.index} forecasts={forecasts}/>
+))}
   </>
 
   );

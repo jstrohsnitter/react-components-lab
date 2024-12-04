@@ -5,10 +5,10 @@ return(
 <>
 <section>
         <div className="weather">
-            <h2>{props.day}</h2>
-            <img src="" alt="" />
-            <p><span>conditions: </span>{props.conditions}</p>
-            <p><span>time: </span>{props.time}</p>
+            <h2>{props.forecasts.day}</h2>
+            <img src={props.forecasts.img} alt={props.forecasts.imgAlt}  />
+            <p><span>conditions: </span>{props.forecasts.conditions}</p>
+            <p><span>time: </span>{props.forecasts.time}</p>
         </div>
 </section>
 </>
